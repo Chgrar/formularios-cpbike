@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario de Salida</title>
+</head>
+<body>
+    <h1>Publica tu nueva salida!!</h1>
+    <div class="container">
+        <div class="image-container">
+            <img src="datos.jpg" alt="Descripción de la imagen">
+            <br>
+            <div class="redes">
+                <h3>Síguenos!!</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/people/CP-Bike/61565348305487/?mibextid=ZbWKwL" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/cpbike.ar?utm_source=qr&igsh=ZnNvNTYwZ2dhZW0z" target="_blank">Instagram</a>
+                    <a href="https://youtube.com" target="_blank">YouTube</a>
+                </div>
+                <br>
+                <button type="submit">Volver a cpBike</button>
+            </div>
+        </div>
+        <div class="form-container">
+            <form action="https://formspree.io/f/mgveaoan" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="titulo">Título de salida:</label>
+                <input type="text" id="titulo" name="titulo" required>
+
+                <label for="fecha">Fecha de salida:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="km">KM a recorrer:</label>
+                <input type="number" id="km" name="km" required>
+                
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="">Selecciona una categoría</option>
+                    <option value="categoria1">Cicloturismo Salidas</option>
+                    <option value="categoria2">Entrenamiento</option>
+                    <option value="categoria3">Travesía</option>
+                    <option value="categoria4">Competencia MTB</option>
+                    <option value="categoria5">Competencia Ruta</option>
+                </select>
+
+                <label for="imagen">Cargar imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" >
+
+                <button type="submit" name="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+   
+</body>
+</html>
